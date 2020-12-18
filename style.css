@@ -168,4 +168,19 @@ a {
     width: 100%;
   }
 }
+
+/*  ==collections==  */
+.collections {
+  height: 500px;
+  background-color: red;
+}
+
+.collections .container .main-content {
+  width: 847px;
+}
+
+.collections .container .main-content .content-header {
+  height: 410px;
+  background-color: blue;
+}
 /*# sourceMappingURL=style.css.map */

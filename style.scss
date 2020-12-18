@@ -127,3 +127,22 @@ a {
         width: 100%;
     }
 }
+
+/*  ==collections==  */
+
+.collections{
+    height: 500px;
+    background-color: red;
+
+    .container{
+
+        .main-content{
+            width: 847px;
+
+            .content-header{
+                height: 410px;
+                background-color: blue;
+            }
+        }
+    }
+}
