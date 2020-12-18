@@ -190,7 +190,7 @@ a {
 }
 
 .collections .container .collections-sections .main-content .content-header {
-  height: 410px;
+  height: 415px;
 }
 
 .collections .container .collections-sections .main-content .content-header .content-titles {
@@ -243,5 +243,68 @@ a {
   color: white;
   margin-left: 50px;
   margin-top: 8px;
+}
+
+.collections .container .collections-sections .main-content .content-items .content-item {
+  width: 263px;
+  height: 370px;
+}
+
+.collections .container .collections-sections .main-content .content-items .content-item .item-image {
+  background-image: url(img/Screenshot_2.png);
+  width: 263px;
+  height: 264px;
+  background-size: cover;
+}
+
+.collections .container .collections-sections .main-content .content-items .content-item .item-title {
+  color: #000000;
+  max-width: 100%;
+  font-weight: 600;
+  margin-left: 75px;
+  position: relative;
+  top: 5px;
+}
+
+.collections .container .collections-sections .main-content .content-items .content-item .item-title:hover {
+  color: #337ab7;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.collections .container .collections-sections .main-content .content-items .content-item .item-quantity {
+  text-align: center;
+  margin-top: 7px;
+  color: #333333;
+}
+
+.collections .container .collections-sections .main-content .content-items .content-item .item-button-flame {
+  width: 150px;
+  height: 32px;
+  background: #ffffff;
+  text-transform: uppercase;
+  border: 1px #d1d1d1 solid;
+  color: #666666;
+  font-size: 11px;
+  font-weight: bold;
+  margin: 20px;
+  margin-left: 60px;
+}
+
+.collections .container .collections-sections .main-content .content-items .content-item .item-button-flame .item-button {
+  color: #666666;
+  position: relative;
+  top: 8px;
+  margin-left: 7px;
+}
+
+.collections .container .collections-sections .main-content .content-items .content-item .item-button-flame:hover {
+  background: #337ab7;
+  border: 1px #337ab7 solid;
+  color: white;
+}
+
+.collections .container .collections-sections .main-content .content-items .content-item .item-button:hover {
+  color: white;
 }
 /*# sourceMappingURL=style.css.map */
