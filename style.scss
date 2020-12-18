@@ -132,16 +132,75 @@ a {
 
 .collections{
     height: 500px;
-    background-color: red;
 
     .container{
 
-        .main-content{
-            width: 847px;
+        .collections-sections{
+            display: flex;
 
-            .content-header{
-                height: 410px;
-                background-color: blue;
+            .left-section{
+                width: 280px;
+                background-color: green;
+            }
+
+            .main-content{
+                width: 847px;
+    
+                .content-header{
+                    height: 410px;
+
+                    .content-titles{
+                        display: flex;
+                        justify-content: space-between;
+
+                        .content-title{
+                            color: #000000;
+                            text-transform: uppercase;
+                            font-size: 22px;
+                            line-height: 18px;
+                            font-weight: 600;
+                        }
+
+                        .content-links{
+                            font-size: 11px;
+                            color: #666666;
+
+                            a {
+                                font-size: 11px;
+                                color: #666666;
+                            }
+
+                            a:hover{
+                                color: #337ab7;
+                                transition: 0.3s;
+                            }
+                        }
+                    }
+
+                    .content-image{
+
+                        img{
+                            margin-top: 20px;
+                        }
+
+                        .image-title{
+                            color: white;
+                            font-size: 50px;
+                            font-weight: bold;
+                            margin-top: -210px;
+                            margin-left: 50px;
+                        }
+
+                        .image-desc{
+                            font-size: 14px;
+                            color: white;
+                            margin-left: 50px;
+                            margin-top: 8px;
+                        }
+
+                    }
+
+                }
             }
         }
     }

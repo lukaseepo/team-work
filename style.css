@@ -172,15 +172,76 @@ a {
 /*  ==collections==  */
 .collections {
   height: 500px;
-  background-color: red;
 }
 
-.collections .container .main-content {
+.collections .container .collections-sections {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.collections .container .collections-sections .left-section {
+  width: 280px;
+  background-color: green;
+}
+
+.collections .container .collections-sections .main-content {
   width: 847px;
 }
 
-.collections .container .main-content .content-header {
+.collections .container .collections-sections .main-content .content-header {
   height: 410px;
-  background-color: blue;
+}
+
+.collections .container .collections-sections .main-content .content-header .content-titles {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.collections .container .collections-sections .main-content .content-header .content-titles .content-title {
+  color: #000000;
+  text-transform: uppercase;
+  font-size: 22px;
+  line-height: 18px;
+  font-weight: 600;
+}
+
+.collections .container .collections-sections .main-content .content-header .content-titles .content-links {
+  font-size: 11px;
+  color: #666666;
+}
+
+.collections .container .collections-sections .main-content .content-header .content-titles .content-links a {
+  font-size: 11px;
+  color: #666666;
+}
+
+.collections .container .collections-sections .main-content .content-header .content-titles .content-links a:hover {
+  color: #337ab7;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.collections .container .collections-sections .main-content .content-header .content-image img {
+  margin-top: 20px;
+}
+
+.collections .container .collections-sections .main-content .content-header .content-image .image-title {
+  color: white;
+  font-size: 50px;
+  font-weight: bold;
+  margin-top: -210px;
+  margin-left: 50px;
+}
+
+.collections .container .collections-sections .main-content .content-header .content-image .image-desc {
+  font-size: 14px;
+  color: white;
+  margin-left: 50px;
+  margin-top: 8px;
 }
 /*# sourceMappingURL=style.css.map */
