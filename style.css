@@ -216,16 +216,16 @@ a {
 
 .collections .container .collections-sections .main-content .content-header .content-titles .content-links {
   font-size: 11px;
-  color: #666666;
+  color: #777777;
 }
 
 .collections .container .collections-sections .main-content .content-header .content-titles .content-links a {
   font-size: 11px;
-  color: #666666;
+  color: #777777;
 }
 
 .collections .container .collections-sections .main-content .content-header .content-titles .content-links a:hover {
-  color: #337ab7;
+  color: #0183c1;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
@@ -235,7 +235,7 @@ a {
 }
 
 .collections .container .collections-sections .main-content .content-header .content-image .image-title {
-  color: white;
+  color: #fff;
   font-size: 50px;
   font-weight: bold;
   margin-top: -210px;
@@ -244,7 +244,7 @@ a {
 
 .collections .container .collections-sections .main-content .content-header .content-image .image-desc {
   font-size: 14px;
-  color: white;
+  color: #fff;
   margin-left: 50px;
   margin-top: 8px;
 }
@@ -280,7 +280,7 @@ a {
 }
 
 .collections .container .collections-sections .main-content .content-items .content-item .item-title:hover {
-  color: #337ab7;
+  color: #0183c1;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
@@ -294,10 +294,10 @@ a {
 .collections .container .collections-sections .main-content .content-items .content-item .item-button-flame {
   width: 150px;
   height: 32px;
-  background: #ffffff;
+  background: #fff;
   text-transform: uppercase;
   border: 1px #d1d1d1 solid;
-  color: #666666;
+  color: #777777;
   font-size: 11px;
   font-weight: bold;
   margin: 20px;
@@ -305,22 +305,22 @@ a {
 }
 
 .collections .container .collections-sections .main-content .content-items .content-item .item-button-flame .item-button {
-  color: #666666;
+  color: #777777;
   position: relative;
   top: 8px;
   margin-left: 7px;
 }
 
 .collections .container .collections-sections .main-content .content-items .content-item .item-button-flame:hover {
-  background: #337ab7;
-  border: 1px #337ab7 solid;
+  background: #0183c1;
+  border: 1px #0183c1 solid;
   color: white;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
 .collections .container .collections-sections .main-content .content-items .content-item .item-button-flame:hover .item-button {
-  color: white;
+  color: #fff;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
