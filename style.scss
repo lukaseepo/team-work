@@ -334,3 +334,74 @@ a {
         }
     }
 }
+
+
+/* blog */
+
+.news {
+    width: 100%;
+    height: max-content;
+    .items {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        justify-content: space-between;
+        .row {
+            width: 100%;
+            height: max-content;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            h1 {
+                color: $black;
+                font-size: 22px;
+                font-weight: 600;
+                letter-spacing: 1px;
+                text-transform: uppercase;
+            }
+            ul {
+                display: flex;
+                li {
+                    a {
+                        color: $dark-grey;
+                        font-size: 11px;
+                    }
+                    .divider {
+                        color: $dark-grey;
+                        margin: 7px;
+                    }
+                    span {
+                        font-weight: normal;
+                        color: $dark-grey;
+                    }
+                }
+            }
+        }
+        .item {
+            width: 847px;
+            height: 580px;
+            margin-top: 30px;
+            img {
+                width: 100%;
+            }
+            h2 {
+                margin: auto;
+                font-weight: 600;
+                margin-top: 5px;
+                margin-bottom: 2px;
+                color: $dark-black;
+            }
+            span {
+                font-style: italic;
+                font-size: 13px;
+                color: $grey3;
+            }
+            p {
+                width: 847px;
+                height: 54px;
+                color: $black-3;
+                font-size: 14px;
+            }
+        }
+    }
+}
