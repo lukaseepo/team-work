@@ -233,12 +233,21 @@ a {
                 background-color: green;
                 height: 1000px;
 
-                @media only screen and (max-width: 1160px) {
-                    width: 100%;
+                @media only screen and (max-width: 620px) {
+                    width: 320px;
                 }
             }
             .main-content {
                 width: 847px;
+                @media only screen and (max-width: 896px) {
+                    margin-top: 80px;
+                    width: 500px;
+                }
+
+                @media only screen and (max-width: 620px) {
+                    width: 320px;
+                }
+
                 .content-header {
                     height: 415px;
                     .content-titles {
@@ -279,6 +288,9 @@ a {
                                     width: 600px;
                             }
 
+                            @media only screen and (max-width: 620px) {
+                                width: 320px;
+                            }
 
                             }
                         }
@@ -288,6 +300,11 @@ a {
                             font-weight: bold;
                             margin-top: -210px;
                             margin-left: 50px;
+
+                            @media only screen and (max-width: 620px) {
+                                font-size: 20px;
+                                margin-top: -100px;
+                            }
                         }
                         .image-desc {
                             font-size: 14px;
@@ -305,10 +322,14 @@ a {
                         grid-template-columns: 320px 100px;
                     }
 
+                    @media only screen and (max-width: 620px) {
+                        grid-template-columns: 1fr;
+                    }
+
                     .content-item {
                         width: 263px;
                         height: 370px;
-                        margin-left: 15px;
+                        margin-left: 20px;
                         margin-bottom: 25px;
                         .item-image {
                             background-image: url(img/Screenshot_2.png);

@@ -314,16 +314,31 @@ a {
   height: 1000px;
 }
 
-@media only screen and (max-width: 1160px) {
+@media only screen and (max-width: 620px) {
   .collections .container
 .collections-sections .left-section {
-    width: 100%;
+    width: 320px;
   }
 }
 
 .collections .container
 .collections-sections .main-content {
   width: 847px;
+}
+
+@media only screen and (max-width: 896px) {
+  .collections .container
+.collections-sections .main-content {
+    margin-top: 80px;
+    width: 500px;
+  }
+}
+
+@media only screen and (max-width: 620px) {
+  .collections .container
+.collections-sections .main-content {
+    width: 320px;
+  }
 }
 
 .collections .container
@@ -392,6 +407,13 @@ a {
   }
 }
 
+@media only screen and (max-width: 620px) {
+  .collections .container
+.collections-sections .main-content .content-header .content-image .content-img {
+    width: 320px;
+  }
+}
+
 .collections .container
 .collections-sections .main-content .content-header .image-title {
   color: #fff;
@@ -399,6 +421,14 @@ a {
   font-weight: bold;
   margin-top: -210px;
   margin-left: 50px;
+}
+
+@media only screen and (max-width: 620px) {
+  .collections .container
+.collections-sections .main-content .content-header .image-title {
+    font-size: 20px;
+    margin-top: -100px;
+  }
 }
 
 .collections .container
@@ -425,11 +455,19 @@ a {
   }
 }
 
+@media only screen and (max-width: 620px) {
+  .collections .container
+.collections-sections .content-items {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
 .collections .container
 .collections-sections .content-items .content-item {
   width: 263px;
   height: 370px;
-  margin-left: 15px;
+  margin-left: 20px;
   margin-bottom: 25px;
 }
 
