@@ -8,6 +8,10 @@
   list-style-type: none;
 }
 
+body {
+  font-family: arial;
+}
+
 a {
   text-decoration: none;
 }
