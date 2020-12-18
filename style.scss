@@ -221,9 +221,21 @@ a {
 
         .collections-sections {
             display: flex;
+
+            @media only screen and (max-width: 896px) {
+
+                display: grid;
+                grid-template-columns: 1fr;
+            }
+                
             .left-section {
-                width: 280px;
+                width: 580px;
                 background-color: green;
+                height: 1000px;
+
+                @media only screen and (max-width: 1160px) {
+                    width: 100%;
+                }
             }
             .main-content {
                 width: 847px;
@@ -232,6 +244,11 @@ a {
                     .content-titles {
                         display: flex;
                         justify-content: space-between;
+
+                        @media only screen and (max-width: 1160px) {
+                            display: grid;
+                            grid-template-columns: 2fr 2fr;
+                        }
                         .content-title {
                             color: #000000;
                             text-transform: uppercase;
@@ -254,17 +271,15 @@ a {
                     }
                     .content-image {
 
-                        display: none;
-
-                        img{
-                            width: 600px;
-                        }
-
                         .content-img {
                             margin-top: 20px;
-                            width: 600px;
-                            height: 300px;
-                            
+                            width: 850px;
+
+                            @media only screen and (max-width: 1160px) {
+                                    width: 600px;
+                            }
+
+
                             }
                         }
                         .image-title {
@@ -285,10 +300,15 @@ a {
                 .content-items {
                     display: grid;
                     grid-template-columns: 1fr 1fr 1fr;
+                    
+                    @media only screen and (max-width: 1160px) {
+                        grid-template-columns: 320px 100px;
+                    }
+
                     .content-item {
                         width: 263px;
                         height: 370px;
-                        margin-left: 20px;
+                        margin-left: 15px;
                         margin-bottom: 25px;
                         .item-image {
                             background-image: url(img/Screenshot_2.png);
@@ -344,9 +364,9 @@ a {
                     }
                 }
             }
-        }
+        // }
     }
-}
+// }
 
 
 /* blog */
