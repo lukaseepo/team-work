@@ -203,10 +203,15 @@ a {
                 }
 
                .content-items{
+                    display: grid;
+                    grid-template-columns: 1fr 1fr 1fr;
+
 
                     .content-item{
                         width: 263px;
                         height: 370px;
+                        margin-left: 20px;
+                        margin-bottom: 25px;
 
                         .item-image{
                             background-image: url(img/Screenshot_2.png);
@@ -259,10 +264,12 @@ a {
                             background: #337ab7;
                             border: 1px #337ab7 solid;
                             color: white;
+                            transition: 0.3s;
                         }
-                        
-                        .item-button:hover{
+
+                        .item-button-flame:hover .item-button{
                             color: white;
+                            transition: 0.3s;
                         }
 
                         
