@@ -59,6 +59,105 @@ a {
   margin-left: 10px;
 }
 
+.header-section {
+  width: 100%;
+  padding-top: 30px;
+}
+
+.header-section .header-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  grid-column-gap: 60px;
+}
+
+.header-section .header-items .logo {
+  width: 100%;
+  padding-top: 5px;
+}
+
+.header-section .header-items .search {
+  width: 100%;
+  position: relative;
+}
+
+.header-section .header-items .search input {
+  border: 1px solid #f1f1f1;
+  width: 600px;
+  height: 50px;
+  padding-left: 15px;
+  position: relative;
+  margin-left: 20px;
+}
+
+.header-section .header-items .search button {
+  background-color: transparent;
+  position: absolute;
+  right: 5px;
+  width: 45px;
+  bottom: 0px;
+  border-left: 1px solid #f1f1f1;
+  height: 50px;
+}
+
+.header-section .header-items .search button i {
+  font-size: 20px;
+}
+
+.header-section .header-items .cart {
+  width: 100%;
+  padding-left: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header-section .header-items .cart .circle {
+  width: 50px;
+  height: 50px;
+  background-color: #0183c1;
+  border-radius: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header-section .header-items .cart .circle i {
+  color: #fff;
+  font-size: 25px;
+}
+
+.header-section .header-items .cart .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+.header-section .header-items .cart .info strong {
+  font-size: 13px;
+}
+
+.header-section .header-items .cart .info p {
+  color: #777777;
+  font-size: 11px;
+}
+
 .container {
   width: 1125px;
   margin: auto;
