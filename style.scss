@@ -4,6 +4,7 @@ $blue: #0183c1;
 $white: #fff;
 $black: #222222;
 $grey2: #eaeaea;
+
 * {
     padding: 0;
     margin: 0;
@@ -216,7 +217,7 @@ a {
 
 .collections {
     height: 500px;
-    .container {
+    .container 
 
         .collections-sections {
             display: flex;
@@ -252,6 +253,12 @@ a {
                         }
                     }
                     .content-image {
+                        
+                        display: none;
+
+                        img{
+                            width: 600px;
+                        }
 
                         .content-img {
                             margin-top: 20px;
