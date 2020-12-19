@@ -1283,11 +1283,10 @@ a {
 .collections {
     height: 500px;
     margin-top: 50px;
+    
     .container .collections-sections {
         display: flex;
         @media only screen and (max-width: 896px) {
-            display: grid;
-            grid-template-columns: 1fr;
         }
         .left-section {
             width: 280px;
@@ -1295,6 +1294,27 @@ a {
             margin-top: -58px;
             @media only screen and (max-width: 620px) {
                 width: 320px;
+            }
+
+            @media only screen and (max-width: 896px) {
+                display: none;
+            }
+
+            .days{
+                margin-top: 230px;
+            }
+
+            img{
+                margin-top: 10px;
+            }
+
+            .hot{
+                margin-top: 230px;
+            }
+
+            .menu{
+                position: relative;
+                top: -22px;
             }
         }
         .main-content {

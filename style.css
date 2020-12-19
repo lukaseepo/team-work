@@ -226,18 +226,7 @@ a {
 
 @media only screen and (max-width: 1140px) {
   .category-section .category-items .category-item .category {
-    z-index: 2;
-    background-color: grey;
-    height: 20px;
-    top: 0px;
-    width: 100%;
-  }
-  .category-section .category-items .category-item .category:hover .menu {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-transition: 4s;
-    transition: 4s;
+    display: none;
   }
 }
 
@@ -254,14 +243,6 @@ a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-}
-
-@media only screen and (max-width: 1125px) {
-  .category-section .category-items .category-item .category .all-category {
-    background-color: #222222;
-    padding-top: 15px;
-    width: 100%;
-  }
 }
 
 .category-section .category-items .category-item .category .all-category i {
@@ -287,13 +268,6 @@ a {
           align-items: center;
   padding-left: 15px;
   border: 1px solid #eaeaea;
-}
-
-@media only screen and (max-width: 1125px) {
-  .category-section .category-items .category-item .category .menu {
-    display: none;
-    background-color: #fff;
-  }
 }
 
 .category-section .category-items .category-item .category .menu i {
@@ -334,12 +308,6 @@ a {
           align-items: center;
 }
 
-@media only screen and (max-width: 1125px) {
-  .category-section .category-items .category-item .category .ad {
-    display: none;
-  }
-}
-
 .category-section .category-items .category-item .category .ad h3 {
   color: #fff;
   font-size: 34px;
@@ -365,81 +333,6 @@ a {
   padding-top: 10px;
   padding-bottom: 10px;
   position: relative;
-  overflow: hidden;
-}
-
-.category-section .category-items .category-item .category .clothes:hover img {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-  cursor: pointer;
-}
-
-.category-section .category-items .category-item .category .clothes:hover .circle {
-  -webkit-animation: fadeInUp 700ms both;
-          animation: fadeInUp 700ms both;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.category-section .category-items .category-item .category .clothes:hover .info a {
-  color: #0183c1;
-}
-
-@media only screen and (max-width: 1125px) {
-  .category-section .category-items .category-item .category .clothes {
-    display: none;
-  }
-}
-
-.category-section .category-items .category-item .category .clothes .circle {
-  width: 40px;
-  height: 40px;
-  background-color: #fff;
-  border-radius: 100%;
-  position: absolute;
-  left: 110px;
-  top: 210px;
-  display: none;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.category-section .category-items .category-item .category .clothes .circle i {
-  font-size: 10px;
-  color: #0183c1;
-}
-
-@-webkit-keyframes fadeInUp {
-  from {
-    opacity: 0;
-    -webkit-transform: translate3d(0, 100%, 0);
-            transform: translate3d(0, 100%, 0);
-  }
-  to {
-    opacity: 1;
-    -webkit-transform: translate3d(0, 0, 0);
-            transform: translate3d(0, 0, 0);
-  }
-}
-
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    -webkit-transform: translate3d(0, 100%, 0);
-            transform: translate3d(0, 100%, 0);
-  }
-  to {
-    opacity: 1;
-    -webkit-transform: translate3d(0, 0, 0);
-            transform: translate3d(0, 0, 0);
-  }
 }
 
 .category-section .category-items .category-item .category .clothes .days {
@@ -621,12 +514,6 @@ a {
   border-bottom: 5px solid #0183c1;
 }
 
-@media only screen and (max-width: 1125px) {
-  .category-section .category-items .category-item .category .information {
-    display: none;
-  }
-}
-
 .category-section .category-items .category-item .category .information .circle {
   width: 100px;
   height: 100px;
@@ -721,13 +608,6 @@ a {
 
 .wrapper .slider-section {
   width: 100%;
-}
-
-@media only screen and (max-width: 1125px) {
-  .wrapper .slider-section {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
 }
 
 .wrapper .slider-section .slider-items {
@@ -827,8 +707,6 @@ a {
 @media only screen and (max-width: 1125px) {
   .wrapper .newproduct-section {
     height: 100%;
-    padding-left: 20px;
-    padding-right: 20px;
   }
 }
 
@@ -940,16 +818,6 @@ a {
           flex-direction: column;
   height: 350px;
   text-align: center;
-  position: relative;
-}
-
-.wrapper .newproduct-section .newproduct-items .newproduct-item .newproduct .cirlce {
-  width: 40px;
-  border-radius: 100%;
-  height: 40px;
-  position: absolute;
-  background-color: #fff;
-  top: 20px;
 }
 
 .wrapper .newproduct-section .newproduct-items .newproduct-item .newproduct .info {
@@ -1013,9 +881,13 @@ a {
 
 @media only screen and (max-width: 1125px) {
   .wrapper .best-section {
+    padding-top: 150px;
+  }
+}
+
+@media only screen and (max-width: 660px) {
+  .wrapper .best-section {
     padding-top: 250px;
-    padding-left: 20px;
-    padding-right: 20px;
   }
 }
 
@@ -1064,7 +936,7 @@ a {
   }
 }
 
-@media only screen and (max-width: 820px) and (max-width: 1125px) {
+@media only screen and (max-width: 820px) and (max-width: 660px) {
   .wrapper .best-section .best-items .best-item img {
     height: 300px;
     width: 100%;
@@ -2144,25 +2016,39 @@ a {
   display: flex;
 }
 
-@media only screen and (max-width: 896px) {
-  .collections .container .collections-sections {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-  }
-}
-
 .collections .container .collections-sections .left-section {
-  width: 580px;
-  background-color: green;
+  width: 280px;
   height: 1000px;
+  margin-top: -58px;
 }
 
 @media only screen and (max-width: 620px) {
   .collections .container .collections-sections .left-section {
     width: 320px;
   }
+}
+
+@media only screen and (max-width: 896px) {
+  .collections .container .collections-sections .left-section {
+    display: none;
+  }
+}
+
+.collections .container .collections-sections .left-section .days {
+  margin-top: 230px;
+}
+
+.collections .container .collections-sections .left-section img {
+  margin-top: 10px;
+}
+
+.collections .container .collections-sections .left-section .hot {
+  margin-top: 230px;
+}
+
+.collections .container .collections-sections .left-section .menu {
+  position: relative;
+  top: -22px;
 }
 
 .collections .container .collections-sections .main-content {
