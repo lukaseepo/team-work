@@ -290,14 +290,14 @@ a {
 .category-section .category-items .category-item .category .clothes {
   width: 100%;
   height: auto;
-  background-position: center center;
-  background-size: 100%;
-  background-repeat: no-repeat;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-left: 20px;
-  margin-top: 15px;
+  margin-top: 20px;
   padding-top: 10px;
   padding-bottom: 10px;
   position: relative;
@@ -312,6 +312,9 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  position: absolute;
+  left: 20px;
+  top: 15px;
 }
 
 .category-section .category-items .category-item .category .clothes .days .day {
@@ -375,12 +378,133 @@ a {
 }
 
 .category-section .category-items .category-item .category .clothes .hot {
-  width: 35px;
+  width: 40px;
   height: 20px;
   background-color: #ff4318;
   position: absolute;
   top: 20px;
-  right: 20px;
+  right: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.category-section .category-items .category-item .category .clothes .hot h5 {
+  color: #fff;
+  font-size: 10px;
+}
+
+.category-section .category-items .category-item .category .clothes .info {
+  width: 100%;
+  height: 150px;
+  border-left: 1px solid #f4f4f4;
+  border-right: 1px solid #f4f4f4;
+  border-bottom: 1px solid #f4f4f4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 15px;
+  padding-bottom: 20px;
+}
+
+.category-section .category-items .category-item .category .clothes .info a {
+  color: #222222;
+  font-size: 14px;
+}
+
+.category-section .category-items .category-item .category .clothes .info .stars {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.category-section .category-items .category-item .category .clothes .info .stars i {
+  color: #bbb;
+  padding-left: 5px;
+  font-size: 13px;
+}
+
+.category-section .category-items .category-item .category .clothes .info .select {
+  color: #222222;
+  height: 25px;
+  width: 110px;
+  font-size: 11px;
+  border: 1px solid #e5e5e5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.category-section .category-items .category-item .category .information {
+  width: 100%;
+  height: 350px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 30px;
+  padding: 15px;
+  padding-bottom: 15px;
+  border-top: 1px solid #f1f1f1;
+  border-left: 1px solid #f1f1f1;
+  border-right: 1px solid #f1f1f1;
+  border-bottom: 5px solid #0183c1;
+}
+
+.category-section .category-items .category-item .category .information .circle {
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  background-size: cover;
+}
+
+.category-section .category-items .category-item .category .information p {
+  text-align: center;
+  color: #333;
+  font-size: 14px;
+}
+
+.category-section .category-items .category-item .category .information .check-line {
+  width: 90px;
+  height: 3px;
+  background-color: #f4f4f4;
+  margin-top: 5px;
+}
+
+.category-section .category-items .category-item .category .information h3 {
+  color: #0183c1;
+  font-size: 16px;
 }
 
 .category-section .category-items .category-item .shipping {
