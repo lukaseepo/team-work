@@ -1318,9 +1318,27 @@ a {
             @media only screen and (max-width: 896px) {
                 margin-top: 80px;
                 width: 500px;
+                margin-left: 120px;
+            }
+
+            @media only screen and (max-width: 896px) {
+                margin-left: 80px;
+            }
+
+            @media only screen and (max-width: 700px) {
+                margin-left: 1px;
             }
             @media only screen and (max-width: 620px) {
                 width: 320px;
+                margin-left: 150px;
+            }
+
+            @media only screen and (max-width: 487px) {
+                margin-left: 50px;
+            }
+
+            @media only screen and (max-width: 350px) {
+                margin-left: 1px;
             }
             .content-header {
                 height: 415px;
