@@ -240,7 +240,15 @@
                     position: absolute;
                     top: -20px;
                     @media only screen and (max-width: 1140px) {
-                        display: none;
+                        z-index: 2;
+                        background-color: grey;
+                        height: 20px;
+                        top: 0px;
+                        width: 100%;
+                        &:hover .menu {
+                            display: flex;
+                            transition: 4s;
+                        }
                     }
                     .all-category {
                         width: 250px;
@@ -249,6 +257,11 @@
                         display: flex;
                         align-items: center;
                         justify-content: space-between;
+                        @media only screen and (max-width: 1125px) {
+                            background-color: $black;
+                            padding-top: 15px;
+                            width: 100%;
+                        }
                         i {
                             color: $white;
                             font-size: 20px;
@@ -267,6 +280,10 @@
                         align-items: center;
                         padding-left: 15px;
                         border: 1px solid $grey2;
+                        @media only screen and (max-width: 1125px) {
+                            display: none;
+                            background-color: $white;
+                        }
                         i {
                             color: $grey;
                             font-size: 13px;
@@ -292,6 +309,9 @@
                         justify-content: center;
                         flex-direction: column;
                         align-items: center;
+                        @media only screen and (max-width: 1125px) {
+                            display: none;
+                        }
                         h3 {
                             color: $white;
                             font-size: 34px;
@@ -311,6 +331,48 @@
                         padding-top: 10px;
                         padding-bottom: 10px;
                         position: relative;
+                        overflow: hidden;
+                        &:hover img {
+                            transform: scale(1.10);
+                            transition: 0.5s;
+                            cursor: pointer;
+                        }
+                        &:hover .circle {
+                            animation: fadeInUp 700ms both;
+                            display: flex;
+                        }
+                        &:hover .info a {
+                            color: $blue;
+                        }
+                        @media only screen and (max-width: 1125px) {
+                            display: none;
+                        }
+                        .circle {
+                            width: 40px;
+                            height: 40px;
+                            background-color: $white;
+                            border-radius: 100%;
+                            position: absolute;
+                            left: 110px;
+                            top: 210px;
+                            display: none;
+                            align-items: center;
+                            justify-content: center;
+                            i {
+                                font-size: 10px;
+                                color: $blue;
+                            }
+                        }
+                        @keyframes fadeInUp {
+                            from {
+                                opacity: 0;
+                                transform: translate3d(0, 100%, 0);
+                            }
+                            to {
+                                opacity: 1;
+                                transform: translate3d(0, 0, 0);
+                            }
+                        }
                         .days {
                             height: auto;
                             display: flex;
@@ -405,6 +467,9 @@
                         border-left: 1px solid $lightgrey;
                         border-right: 1px solid $lightgrey;
                         border-bottom: 5px solid $blue;
+                        @media only screen and (max-width: 1125px) {
+                            display: none;
+                        }
                         .circle {
                             width: 100px;
                             height: 100px;
@@ -475,6 +540,10 @@
         }
         .slider-section {
             width: 100%;
+            @media only screen and (max-width: 1125px) {
+                padding-left: 20px;
+                padding-right: 20px;
+            }
             .slider-items {
                 display: grid;
                 grid-template-columns: 1fr;
@@ -544,6 +613,8 @@
             width: 100%;
             @media only screen and (max-width: 1125px) {
                 height: 100%;
+                padding-left: 20px;
+                padding-right: 20px;
             }
             .newproduct-items {
                 display: grid;
@@ -608,6 +679,15 @@
                         flex-direction: column;
                         height: 350px;
                         text-align: center;
+                        position: relative;
+                        .cirlce {
+                            width: 40px;
+                            border-radius: 100%;
+                            height: 40px;
+                            position: absolute;
+                            background-color: $white;
+                            top: 20px;
+                        }
                         .info {
                             display: flex;
                             flex-direction: column;
@@ -637,10 +717,9 @@
         .best-section {
             width: 100%;
             @media only screen and (max-width: 1125px) {
-                padding-top: 150px;
-            }
-            @media only screen and (max-width: 660px) {
                 padding-top: 250px;
+                padding-left: 20px;
+                padding-right: 20px;
             }
             .best-items {
                 display: grid;
@@ -668,7 +747,7 @@
                     @media only screen and (max-width: 820px) {
                         grid-template-columns: 1fr;
                         img {
-                            @media only screen and (max-width: 660px) {
+                            @media only screen and (max-width: 1125px) {
                                 height: 300px;
                                 width: 100%;
                             }
